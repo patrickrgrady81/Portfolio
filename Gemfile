@@ -5,6 +5,7 @@ ruby '2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
+gem "haml-rails", "~> 2.0"
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -30,12 +31,9 @@ gem 'dotenv-rails', :groups => [:development, :test]
 
 # These are for activeadmin
 gem 'devise'
-gem 'activeadmin', github: 'activeadmin/activeadmin'
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 # other gems I will be using
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
-gem 'simple_form'
 gem 'better_errors', '~> 2.6'
 gem "binding_of_caller"
 
