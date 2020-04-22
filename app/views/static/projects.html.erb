@@ -20,7 +20,11 @@
       <% if project.demo %>
         <p><%= link_to "DEMO", project.demo, target: "_blank" %></p>
       <% else %>
-        <p>Sorry, no demo available</p>
+        <% if project.name == "Recipe Revamp" %>
+          <p>The Recipe Ravamp demo is currently not working, I'm trying hard to make this Sinatra app work on heroku.</p>
+        <% else %>
+          <p>Sorry, no demo available</p>
+        <% end %>
       <% end %>
     </div>
   <% end %>

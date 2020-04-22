@@ -15,7 +15,7 @@ recipe = {
   description: "Taking the scraper to a new level and creating a rails app that helps users save recipes into their own space",
   video: "bmmeJO4AaBg",
   code: "https://github.com/patrickrgrady81/Sinatra-App",
-  demo: "https://reciperevamp.herokuapp.com/"
+  demo: nil
 }
 
 novel = {
