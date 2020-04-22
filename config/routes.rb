@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   root to: "static#index"
 
-  namespace :api do
-    namespace :v1 do
-      resources :scores
-    end
-  end
+  get "/projects", to: "static#projects", as: "projects_page"
+
+
+  # namespace :api do
+  #   namespace :v1 do
+  #     resources :scores
+  #   end
+  # end
+
+
 end

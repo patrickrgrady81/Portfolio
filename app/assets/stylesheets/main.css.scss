@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(#ccc, lightgreen);
+  background-size: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo a {
+  text-decoration: none;
+  float: left;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 2rem;
+  margin-top: 2px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
