@@ -1,0 +1,32 @@
+#contact-form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  #form-name, #form-msg, #form-btn {
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 5px 5px;
+  }
+  // #form-name {
+
+  // }
+  // #form-msg {
+
+  // }
+  #form-btn{
+    width:50%;
+    margin: 0 auto;
+  }
+}
+
+#links{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  #github-img, #linkedin-img {
+  width: 60;
+  height: 60;
+  margin-right: 2rem;
+  }
+}
