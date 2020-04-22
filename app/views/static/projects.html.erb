@@ -1,0 +1,22 @@
+<div id="oContainer" >
+  <% @projects.each do |project| %>
+    <div id= "iContainer">
+      <h1><%= project.name %></h1>
+      <% if project.video %>
+        <iframe width="560" height="315" src=<%="https://www.youtube.com/embed/#{project.video}" %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <% else %>
+        <p>Sorry, no video available</p>
+      <% end %>
+      <% if project.code %>
+        <p><%= link_to "CODE", project.code, target: "_blank" %></p>
+      <% else %>
+        <p>Sorry, no code available</p>
+      <% end %>
+      <% if project.demo %>
+        <p><%= link_to "DEMO", project.demo, target: "_blank" %></p>
+      <% else %>
+        <p>Sorry, no demo available</p>
+      <% end %>
+    </div>
+  <% end %>
+</div>

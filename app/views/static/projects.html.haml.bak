@@ -1,0 +1,21 @@
+- @projects.each do |project|
+  - local_link = "https://www.youtube.com/embed/#{project.video}&html5=True"
+  - ext_link = "https://www.youtube.com/watch?v=#{project.video}"
+  %h1= project.name 
+  -# %iframe {title:"YouTube video player", width:"800",
+  -#               height:"600", src:"//www.youtube.com/embed/#{ project.video }",
+  -#               frameborder:"10", allowfullscreen}
+  -# %iframe {src: local_link, frameborder: 10}
+  -# = video_tag(local_link, :controls => true, :autobuffer => true, :autoplay => true, :loop => true, :id => "hero-video")
+  %iframe {align: "center", name: "window", src: "https://www.youtube.com/embed/Ho-NgldkZ7Y", height: "500px", width:"700px"}
+
+  %br/
+  = link_to ext_link, ext_link
+  %br/
+  = link_to "Code", project.code
+  %br/
+  - if project.demo
+    = link_to "Demo", project.demo
+
+  - else  
+    %h3 No Demo Available

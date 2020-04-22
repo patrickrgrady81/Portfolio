@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: "static#index"
 
-  # get "/projects", to: "static#projects", as: "projects_page"
+  get "/projects", to: "static#projects", as: "projects_page"
   get "/contact", to: "static#contact", as: "contact_page"
 
 

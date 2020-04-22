@@ -3,6 +3,7 @@ class StaticController < ApplicationController
   end
 
   def projects
+    @projects = Project.all
   end
 
   def contact
