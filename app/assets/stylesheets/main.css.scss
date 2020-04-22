@@ -19,6 +19,7 @@ header {
   justify-content: flex-end;
   background: var(--gray-color);
   border-radius: 8px;
+  margin-bottom: 3rem;
   a {
     color: white;
   }
@@ -26,8 +27,8 @@ header {
 
 .logo {
   a {
-  text-decoration: none;
-  float: left;
+    text-decoration: none;
+    float: left;
   }
   a:hover {
     color: var(--green-color)
@@ -45,13 +46,14 @@ nav {
     padding: 5px 20px;
     border: 1px solid black;
     border-radius: 8px;
+  
+    a {
+      text-decoration: none;
+    }
+
     a:hover {
       background: var(--green-color);
       color: var(--gray-color);
-    }
-    
-    a {
-      text-decoration: none;
     }
   }
 }

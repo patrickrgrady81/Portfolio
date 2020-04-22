@@ -1,5 +1,14 @@
 Project.destroy_all
 
+
+
+scraper = {
+  name: "CLI Scraper",
+  video: "quqwcj0pj80",
+  code: "https://github.com/patrickrgrady81/RubyGemCLI",
+  demo: "https://reciperevamp.herokuapp.com/"
+}
+
 recipe = {
   name: "Recipe Revamp",
   video: "bmmeJO4AaBg",
@@ -22,6 +31,7 @@ snake = {
 }
 
 
+Project.create(scraper)
 Project.create(recipe)
 Project.create(novel)
 Project.create(snake)
