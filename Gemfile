@@ -64,6 +64,7 @@ group :test do
 end
 
 group :development do 
+  gem "pry-rails"
   gem 'sqlite3', '~> 1.4'
 end
 
