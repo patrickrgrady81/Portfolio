@@ -1,3 +1,8 @@
+:root {
+  --gray-color: rgba(50, 50, 50, 0.8);
+  --green-color: #8DF9D5
+}
+
 *,
 *::before,
 *::after {
@@ -12,26 +17,41 @@ body {
 header {
   display: flex;
   justify-content: flex-end;
+  background: var(--gray-color);
+  border-radius: 8px;
+  a {
+    color: white;
+  }
 }
 
-.logo a {
+.logo {
+  a {
   text-decoration: none;
   float: left;
+  }
+  a:hover {
+    color: var(--green-color)
+  }
 }
 
-nav ul {
+nav { 
+  ul {
   display: flex;
-}
-
-nav ul li {
-  list-style-type: none;
-  margin-right: 2rem;
-  margin-top: 2px;
-  padding: 5px;
-  border: 1px solid black;
-  border-radius: 8px;
-}
-
-nav ul li a {
-  text-decoration: none;
+  }
+  ul li {
+    list-style-type: none;
+    margin-right: 2rem;
+    margin-top: 2px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    a:hover {
+      background: var(--green-color);
+      color: var(--gray-color);
+    }
+    
+    a {
+      text-decoration: none;
+    }
+  }
 }
