@@ -1,0 +1,33 @@
+#name, #desc {
+  color:black;
+  text-align: center;
+}
+
+#name {
+  margin-top: 120px;
+}
+
+#desc {
+  margin-top: 80px;
+}
+
+@keyframes name {
+  from {font-size: 10rem;}
+  to {font-size: 2rem;}
+}
+
+@keyframes desc {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+#name {
+  animation-name: name;
+  animation-duration: 6s;
+}
+
+#desc {
+  animation-name: desc;
+  animation-duration: 6s;
+}
+
