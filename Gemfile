@@ -27,9 +27,6 @@ gem "omniauth-github", '1.1.1'
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
-# These are for activeadmin
-gem 'devise'
-
 # other gems I will be using
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'better_errors', '~> 2.6'
