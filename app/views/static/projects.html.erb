@@ -13,7 +13,12 @@
         <% end %>
       <% end %>
       <% if project.code %>
-        <p><%= link_to "CODE", project.code, target: "_blank" %></p>
+        <%# Front and backend for code %>
+        <% if project.backend %>
+        <p><%= link_to "Frontend Code", project.code, target: "_blank" %><%= " | "%><%= link_to "Backend Code", project.backend, target: "_blank" %></p>
+        <% else %>
+          <p><%= link_to "CODE", project.code, target: "_blank" %></p>
+        <% end %>
       <% else %>
         <p>Sorry, no code available</p>
       <% end %>
