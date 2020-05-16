@@ -1,0 +1,11 @@
+
+<div class="card-container">
+  <% @projects.each do |project| %>  
+  <div class="card">
+    <div class="card-front">
+      <h1><%= project.name %></h1>
+    </div>
+    <div class="card-back">BACK</div>
+  </div>
+  <% end %>
+</div>

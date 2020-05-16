@@ -1,14 +1,16 @@
-<p id="infoMe">My name is Patrick Grady. I am currently enrolled in Flatiron bootcamp.</p>
-<p>Send me a message:
+<div class="wrapper">
+   <p id="infoMe">My name is Patrick Grady. I am currently enrolled in Flatiron bootcamp.</p>
+   <p>Send me a message:
 
-<%= form_with url: "/contact", method: "post", id: "contact-form", html: { target: "_blank" } do |f| %>
-   <%# f.label(:name, "Name:") %>
-   <%= f.text_field(:name, placeholder: "Name", id:"form-name") %>
-   <%= f.text_area(:message, rows: 20, placeholder: "Message", id:"form-msg") %>
-   <%= f.submit("Send", id: "form-btn") %>
-<% end %>
+   <%= form_with url: "/contact", method: "post", id: "contact-form", html: { target: "_blank" } do |f| %>
+      <%# f.label(:name, "Name:") %>
+      <%= f.text_field(:name, placeholder: "Name", id:"form-name") %>
+      <%= f.text_area(:message, rows: 20, placeholder: "Message", id:"form-msg") %>
+      <%= f.submit("Send", id: "form-btn") %>
+   <% end %>
 
-<div id="links">
-   <%= link_to image_tag("github.svg", id:"github-img"), "https://github.com/patrickrgrady81" %>
-   <%= link_to image_tag("linkedin.svg", id:"linkedin-img"), "https://www.linkedin.com/in/patrickrgrady81/" %>
+   <div id="links">
+      <%= link_to image_tag("github.svg", id:"github-img"), "https://github.com/patrickrgrady81" %>
+      <%= link_to image_tag("linkedin.svg", id:"linkedin-img"), "https://www.linkedin.com/in/patrickrgrady81/" %>
+   </div>
 </div>

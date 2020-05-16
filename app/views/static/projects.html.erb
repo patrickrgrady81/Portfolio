@@ -3,14 +3,11 @@
     <div id= "iContainer">
       <h1><%= project.name %></h1>
       <p><%= project.description %></p>
+      <p><%= project.tech %></p>
       <% if project.video %>
-        <iframe width="560" height="315" src=<%="https://www.youtube.com/embed/#{project.video}" %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src= "<%=project.video%>" width="560" height="300px" alt="paddysnake" />
       <% else %>
-        <% if project.name == "PaddySnake" %>
-          <%= image_tag("PaddySnake.png", width: '560', height: '316' ) %>
-        <% else %>
           <p>Sorry, no video available</p>
-        <% end %>
       <% end %>
       <% if project.code %>
         <%# Front and backend for code %>
@@ -25,13 +22,10 @@
       <% if project.demo %>
         <p><%= link_to "DEMO", project.demo, target: "_blank" %></p>
       <% else %>
-        <% if project.name == "Recipe Revamp" %>
-          <p>The Recipe Ravamp demo is currently not working, I'm trying hard to make this Sinatra app work on heroku.</p>
-        <% elsif project.name == "CLI Scraper" %>
-          <p>Not sure if there is a way to demo a CLI, if you know how then please <%= link_to "contact me", "/info" %></p>
-        <% else %>
           <p>Sorry, no demo available</p>
-        <% end %>
+      <% end %>
+      <% if project.back %>
+        <p><%= link_to "START SERVER", project.back, target: "_blank" %></p>
       <% end %>
     </div>
   <% end %>

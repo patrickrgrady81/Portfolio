@@ -10,6 +10,10 @@ class StaticController < ApplicationController
     @projects = Project.all
   end
 
+  def newProjects
+    @projects = Project.all
+  end
+
   def info
   end
 

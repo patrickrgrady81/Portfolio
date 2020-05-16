@@ -4,7 +4,6 @@ header {
   background: var(--gray-color);
   border-radius: 50px;
   background-clip: padding-box;
-  margin-bottom: 3rem;
   a {
     color: white;
   }
@@ -41,4 +40,11 @@ nav {
       color: var(--gray-color);
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 4px;
 }
