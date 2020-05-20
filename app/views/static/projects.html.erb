@@ -4,8 +4,8 @@
       <h1><%= project.name %></h1>
       <p><%= project.description %></p>
       <p><%= project.tech %></p>
-      <% if project.video %>
-        <img src= "<%=project.video%>" width="560" height="300px" alt="paddysnake" />
+      <% if project.gif %>
+        <img src= "<%=project.gif%>" width="560" height="300px" alt="paddysnake" />
       <% else %>
           <p>Sorry, no video available</p>
       <% end %>
@@ -26,6 +26,9 @@
       <% end %>
       <% if project.back %>
         <p><%= link_to "START SERVER", project.back, target: "_blank" %></p>
+      <% end %>
+      <% if project.video %>
+        <p><%= link_to "VIDEO", project.video, target: "_blank" %></p>
       <% end %>
     </div>
   <% end %>
