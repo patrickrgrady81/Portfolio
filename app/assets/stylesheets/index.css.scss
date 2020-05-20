@@ -1,5 +1,4 @@
 #name, #desc {
-  color:black;
   text-align: center;
 }
 
@@ -9,6 +8,10 @@
 
 #desc {
   margin-top: 80px;
+}
+
+a:visited {
+  color: black;
 }
 
 @keyframes name {

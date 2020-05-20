@@ -1,15 +1,20 @@
 header {
   display: flex;
   justify-content: flex-end;
-  background: var(--gray-color);
-  border-radius: 50px;
+  background: #143318;
+  margin: 0 -11px;
+  // border-radius: 50px;
   background-clip: padding-box;
   a {
-    color: white;
+    color: rgb(189, 187, 187);
+  }
+  a:visited {
+    color: rgb(189, 187, 187);
   }
 }
 
 .logo {
+  float: left;
   a {
     text-decoration: none;
     margin: 0 3rem;
@@ -28,17 +33,19 @@ nav {
     margin-right: 2rem;
     margin-top: 2px;
     padding: 5px 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(189, 187, 187);;
     border-radius: 8px;
   
     a {
       text-decoration: none;
     }
+  }
+}
 
-    a:hover {
-      background: var(--green-color);
-      color: var(--gray-color);
-    }
+ul > li:hover {
+  background: var(--green-color);
+  a {
+    color: var(--gray-color);
   }
 }
 
@@ -46,5 +53,5 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  margin-top: 4px;
+  // margin-top: 4px;
 }
