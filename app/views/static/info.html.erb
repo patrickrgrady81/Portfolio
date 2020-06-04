@@ -5,7 +5,7 @@
    <%= form_with url: "/contact", method: "post", id: "contact-form", html: { target: "_blank" } do |f| %>
       <%# f.label(:name, "Name:") %>
       <%= f.text_field(:name, placeholder: "Name", id:"form-name") %>
-      <%= f.text_area(:message, rows: 20, placeholder: "Message", id:"form-msg") %>
+      <%= f.text_area(:message, rows: 15, placeholder: "Message", id:"form-msg") %>
       <%= f.submit("Send", id: "form-btn") %>
    <% end %>
 

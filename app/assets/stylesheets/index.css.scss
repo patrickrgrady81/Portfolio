@@ -1,22 +1,25 @@
 #name, #desc {
-  text-align: center;
+  // text-align: center;
+  margin-left: 5rem;
 }
 
 #name {
   margin-top: 120px;
+  font-size: 6rem;
 }
 
 #desc {
   margin-top: 80px;
+  font-size: 2rem;
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 @keyframes name {
-  from {font-size: 10rem;}
-  to {font-size: 2rem;}
+  from {font-size: 12rem;}
+  to {font-size: 6em;}
 }
 
 @keyframes desc {
@@ -26,7 +29,7 @@ a:visited {
 
 #name {
   animation-name: name;
-  animation-duration: 6s;
+  animation-duration: 5s;
 }
 
 #desc {

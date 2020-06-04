@@ -11,7 +11,13 @@
 }
 
 body {
-  background-image: radial-gradient(#6FBF7A, #4F7454);
-  background-size: 100%;
-  color: #143318;
+  // background-size: 100%;
+  // background-image: radial-gradient(#6FBF7A, #4F7454);
+  // background-image: url("comp.jpg");
+  // background-size: 100%;
+  // background-repeat: repeat-y;
+  background: url("comp.jpg") no-repeat center center fixed; 
+  background-size: cover;
+  color: white;
+  overflow-x: hidden;
 }

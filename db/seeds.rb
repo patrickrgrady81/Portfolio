@@ -17,7 +17,7 @@ scraper = {
 recipe = {
   name: "Recipe Revamp",
   tech: "Ruby, Sinatra, HTML, CSS",
-  description: "Taking the scraper to a new level and creating a rails app that helps users save recipes into their own space",
+  description: "Taking the scraper to a new level by making it into a Sinatra App",
   gif: "https://j.gifs.com/6XAkkR.gif",
   code: "https://github.com/patrickrgrady81/Sinatra-App",
   backend: nil,
