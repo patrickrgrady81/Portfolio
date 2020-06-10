@@ -50,10 +50,37 @@ snake = {
   video: "https://www.youtube.com/watch?v=OLrSQ4sMKso&t=2s"
 }
 
+peeker = {
+  name: "Peeker",
+  tech: "Ruby, Rails, HTML, CSS, Javascript, React",
+  description: "Start with 100 credits and see how lucky you are in this fun video poker clone.",
+  gif: "https://j.gifs.com/91zEpY.gif",
+  code: "https://github.com/patrickrgrady81/Peeker-front",
+  backend: "https://github.com/patrickrgrady81/Peeker-back",
+  demo: nil,
+  back: nil,
+  video: nil
+}
+
+city = {
+  name: "City Info",
+  tech: "Ruby, Rails, HTML, CSS, Javascript, React, Redux",
+  description: "Gather information on weather, restaurants and events for the city of your choice.",
+  gif: "https://j.gifs.com/ZYK9mg.gif",
+  code: "https://github.com/patrickrgrady81/weather",
+  backend: "https://github.com/patrickrgrady81/weather-back",
+  demo: nil,
+  back: nil,
+  video: nil
+}
+
 
 Project.create(scraper)
 Project.create(recipe)
 Project.create(novel)
 Project.create(snake)
+Project.create(peeker)
+Project.create(city)
+
 
 puts "#{Project.all.count} projects created "
