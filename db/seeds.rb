@@ -71,7 +71,7 @@ city = {
   backend: "https://github.com/patrickrgrady81/weather-back",
   demo: nil,
   back: nil,
-  video: nil
+  video: "https://youtu.be/vXUJWl9necw"
 }
 
 
