@@ -4,15 +4,14 @@
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  margin-bottom: 1rem;
-  background: url("sky.jpg") no-repeat center center fixed; 
+  // margin-bottom: 1rem;
   background-size: 100%;
 }
 
-div#oContainer {
-  overflow-y: visible;
-  overflow-x: scroll;
-}
+// div#oContainer {
+//   overflow-y: visible;
+//   overflow-x: scroll;
+// }
 
 #iContainer{
   border: 2px solid white;
@@ -46,4 +45,15 @@ div#oContainer {
 
 #iContainer > p > a:visited {
   color: white;
+}
+
+.challenge {
+  a:visited {
+    color: white;
+  }
+  a {
+    color: white;
+  }
+  margin-bottom: 5rem;
+  text-align: center;
 }
