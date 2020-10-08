@@ -69,8 +69,8 @@ city = {
   gif: "https://j.gifs.com/ZYK9mg.gif",
   code: "https://github.com/patrickrgrady81/weather",
   backend: "https://github.com/patrickrgrady81/weather-back",
-  demo: nil,
-  back: nil,
+  demo: "https://patrickrgrady81.github.io/weather",
+  back: "https://pg-city-info.herokuapp.com/",
   video: "https://youtu.be/vXUJWl9necw"
 }
 
