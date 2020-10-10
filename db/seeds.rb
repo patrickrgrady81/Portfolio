@@ -62,17 +62,17 @@ snake = {
 #   video: nil
 # }
 
-# city = {
-#   name: "City Info",
-#   tech: "Ruby, Rails, HTML, CSS, Javascript, React, Redux",
-#   description: "Gather information on weather, restaurants and events for the city of your choice.",
-#   gif: "https://j.gifs.com/ZYK9mg.gif",
-#   code: "https://github.com/patrickrgrady81/weather",
-#   backend: "https://github.com/patrickrgrady81/weather-back",
-#   demo: "https://patrickrgrady81.github.io/weather",
-#   back: "https://pg-city-info.herokuapp.com/",
-#   video: "https://youtu.be/vXUJWl9necw"
-# }
+city = {
+  name: "City Info",
+  tech: "Ruby, Rails, HTML, CSS, Javascript, React, Redux",
+  description: "Gather information on weather, restaurants and events for the city of your choice.",
+  gif: "https://j.gifs.com/ZYK9mg.gif",
+  code: "https://github.com/patrickrgrady81/weather",
+  backend: "https://github.com/patrickrgrady81/weather-back",
+  demo: "https://patrickrgrady81.github.io/weather",
+  back: "https://pg-city-info.herokuapp.com/",
+  video: "https://youtu.be/vXUJWl9necw"
+}
 
 
 Project.create(scraper)
@@ -80,7 +80,7 @@ Project.create(recipe)
 Project.create(novel)
 Project.create(snake)
 # Project.create(peeker)
-# Project.create(city)
+Project.create(city)
 
 
 puts "#{Project.all.count} projects created "
